@@ -111,5 +111,31 @@ ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-3
 cmake_minimum_required(VERSION 3.6)
 project(native)
 add_subdirectory(frameworks/native)
+
+add_subdirectory(frameworks/base/core/jni/libandroid_runtime-x86-android)
+add_subdirectory(frameworks/base/libs/hwui/libhwui-x86-android)
+add_subdirectory(frameworks/base/media/jni/libmedia_jni-x86-android)
+
+# mediacodec
+add_subdirectory(frameworks/av/media/libstagefright/libstagefright-x86-android)
+add_subdirectory(frameworks/av/media/libstagefright/foundation/libstagefright_foundation-x86-android)
+
+# system
+add_subdirectory(system/core/libutils/libutils-x86-linux)
 ```
+
 使用CLion以project形式打开CMakeLists.txt
+
+#### CLion index工程时可能会报错：
+```bash
+no such file or directory: 'external/compiler-rt/lib/cfi/cfi_blacklist.txt'
+```
+
+#### 解决：
+在CMakeLists.txt中找到这个文件，添加${ANDROID_ROOT}，改成绝对路径:
+```bash
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize-blacklist=${ANDROID_ROOT}/external/compiler-rt/lib/cfi/cfi_blacklist.txt")
+```
+
+# 六、CLion 调试native代码
+参考：[https://mp.weixin.qq.com/s/ZLnqsIGu7zvrW8s5kHVpdA](https://mp.weixin.qq.com/s/ZLnqsIGu7zvrW8s5kHVpdA)
