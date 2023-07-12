@@ -33,7 +33,12 @@ repo sync
 find . -name .git | xargs rm -rf
 ```
 
-# 三、编译aosp
+# 三、ubuntu编译aosp
+安装依赖
+```bash
+sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
+```
+
 ```bash
 source build/envsetup.sh 
 lunch aosp_x86-eng
