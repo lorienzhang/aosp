@@ -58,7 +58,7 @@ export SOONG_GEN_CMAKEFILES_DEBUG=1
 
 ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html](https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html)
 
-破解包在res/目录下
+【备注】：破解包，移步res/目录下载
 
 out/development/ide/clion 目录下创建CMakeLists.txt
 ```bash
