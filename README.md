@@ -110,8 +110,6 @@ ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-3
 ```bash
 cmake_minimum_required(VERSION 3.6)
 project(native)
-add_subdirectory(services/surfaceflinger)
-add_subdirectory(libs/ui/libui-arm64-android)
-add_subdirectory(libs/gui/libgui-arm64-android)
+add_subdirectory(frameworks/native)
 ```
 使用CLion以project形式打开CMakeLists.txt
