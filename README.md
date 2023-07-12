@@ -138,4 +138,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize-blacklist=${ANDROID_ROOT}/ext
 ```
 
 # 六、CLion 调试native代码
+### Log + 断点
+
 参考：[https://mp.weixin.qq.com/s/ZLnqsIGu7zvrW8s5kHVpdA](https://mp.weixin.qq.com/s/ZLnqsIGu7zvrW8s5kHVpdA)
