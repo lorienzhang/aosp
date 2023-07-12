@@ -64,6 +64,39 @@ mmm development/tools/idegen/
 sudo development/tools/idegen/idegen.sh
 ```
 
+为提升as第一次构建速度，增加exclude目录:
+```bash
+<excludeFolder url="file://$MODULE_DIR$/bionic" />
+<excludeFolder url="file://$MODULE_DIR$/bootable" />
+<excludeFolder url="file://$MODULE_DIR$/build" />
+<excludeFolder url="file://$MODULE_DIR$/cts" />
+<excludeFolder url="file://$MODULE_DIR$/dalvik" />
+<excludeFolder url="file://$MODULE_DIR$/developers" />
+<excludeFolder url="file://$MODULE_DIR$/development" />
+<excludeFolder url="file://$MODULE_DIR$/device" />
+<excludeFolder url="file://$MODULE_DIR$/docs" />
+<excludeFolder url="file://$MODULE_DIR$/external" />
+<excludeFolder url="file://$MODULE_DIR$/hardware" />
+<excludeFolder url="file://$MODULE_DIR$/kernel" />
+<excludeFolder url="file://$MODULE_DIR$/out" />
+<excludeFolder url="file://$MODULE_DIR$/pdk" />
+<excludeFolder url="file://$MODULE_DIR$/platform_testing" />
+<excludeFolder url="file://$MODULE_DIR$/prebuilts" />
+<excludeFolder url="file://$MODULE_DIR$/sdk" />
+<excludeFolder url="file://$MODULE_DIR$/system" />
+<excludeFolder url="file://$MODULE_DIR$/test" />
+<excludeFolder url="file://$MODULE_DIR$/toolchain" />
+<excludeFolder url="file://$MODULE_DIR$/tools" />
+<excludeFolder url="file://$MODULE_DIR$/.repo" />
+```
+as构建完成后，需要配置SDK和JDK，参考下图：
+
+![](./res/as-1.png)
+
+![](./res/as-2.png)
+
+![](./res/as-3.png)
+
 # 五、CLion导入多工程
 
 官方参考：[https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md](https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md)
