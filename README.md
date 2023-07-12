@@ -141,3 +141,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize-blacklist=${ANDROID_ROOT}/ext
 ### Log + 断点
 
 参考：[https://mp.weixin.qq.com/s/ZLnqsIGu7zvrW8s5kHVpdA](https://mp.weixin.qq.com/s/ZLnqsIGu7zvrW8s5kHVpdA)
+
+### 调试时变量显示 potimized out
+这是因为clang编译时默认会进行优化，可以在Android.dp的cppflags中加入-O0禁止优化，然后重新编译m -j8，重启模拟器再次执行调试就可以了。
