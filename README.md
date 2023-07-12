@@ -56,6 +56,14 @@ export SOONG_GEN_CMAKEFILES_DEBUG=1
 1. [https://blog.csdn.net/itachi85/article/details/89038386?spm=1001.2014.3001.5501](https://blog.csdn.net/itachi85/article/details/89038386?spm=1001.2014.3001.5501)
 2. [https://www.jianshu.com/p/2ba5d6bd461e](https://www.jianshu.com/p/2ba5d6bd461e)
 
+```bash
+source build/envsetup.sh 
+lunch aosp_x86-eng
+mmm development/tools/idegen/
+
+sudo development/tools/idegen/idegen.sh
+```
+
 # 五、CLion导入多工程
 
 官方参考：[https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md](https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md)
