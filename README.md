@@ -40,21 +40,18 @@ lunch aosp_x86-eng
 export LC_ALL=C
 make -j4
 ```
-
-# 四、生成CLion工程
-官方参考：[https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md](https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md)
+如果要生成CLion工程，需要在编译前设置环境变量
 ```bash
 export SOONG_GEN_CMAKEFILES=1
 export SOONG_GEN_CMAKEFILES_DEBUG=1
 ```
-重新编译
 
-```bash
-source build/envsetup.sh 
-lunch aosp_x86-eng
-export LC_ALL=C
-make -j4
-```
+# 四、导入AS
+
+
+# 五、导入CLion工程
+官方参考：[https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md](https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md)
+
 ### 导入CLion多工程
 
 ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html](https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html)
