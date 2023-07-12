@@ -56,11 +56,12 @@ export SOONG_GEN_CMAKEFILES_DEBUG=1
 
 ### 导入CLion多工程
 
+#### 安装CLion
 ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html](https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html)
 
 【备注】：破解包，移步res/目录下载
 
-out/development/ide/clion 目录下创建CMakeLists.txt
+#### out/development/ide/clion目录下创建CMakeLists.txt
 ```bash
 cmake_minimum_required(VERSION 3.6)
 project(native)
@@ -68,4 +69,4 @@ add_subdirectory(services/surfaceflinger)
 add_subdirectory(libs/ui/libui-arm64-android)
 add_subdirectory(libs/gui/libgui-arm64-android)
 ```
-使用CLion打开CMakeLists.txt
+使用CLion以project形式打开CMakeLists.txt
