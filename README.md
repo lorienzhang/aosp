@@ -115,7 +115,7 @@ aosp/frameworks/base/core/res/AndroidManifest.xml
 #### 安装CLion
 ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html](https://www.quanxiaoha.com/idea-pojie/idea-reset-30-day.html)
 
-【备注】：破解包，移步res/目录下载
+**【备注】破解zip包在 res/ 目录下**
 
 #### out/development/ide/clion目录下创建CMakeLists.txt
 ```bash
