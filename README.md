@@ -146,6 +146,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize-blacklist=${ANDROID_ROOT}/ext
 这是因为clang编译时默认会进行优化，可以在Android.dp的cppflags中加入-O0禁止优化，然后重新编译m -j8，重启模拟器再次执行调试就可以了。
 
 # 七、刷机（Nexus 5x）
+### 参考官方链接
+[https://source.android.com/docs/setup/build/running?hl=zh-cn](https://source.android.com/docs/setup/build/running?hl=zh-cn)
+
 ### 下载硬件驱动
 [https://developers.google.com/android/drivers?hl=en#bullheadopm7.181205.001](https://developers.google.com/android/drivers?hl=en#bullheadopm7.181205.001)
 
