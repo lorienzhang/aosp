@@ -51,10 +51,12 @@ export SOONG_GEN_CMAKEFILES_DEBUG=1
 ```
 
 # 四、导入AS
-参考链接：
+### 参考链接：
+
 1. [https://blog.csdn.net/itachi85/article/details/89038386?spm=1001.2014.3001.5501](https://blog.csdn.net/itachi85/article/details/89038386?spm=1001.2014.3001.5501)
 2. [https://www.jianshu.com/p/2ba5d6bd461e](https://www.jianshu.com/p/2ba5d6bd461e)
 
+### 生成android.ipr android.iml
 ```bash
 source build/envsetup.sh 
 lunch aosp_xxx-yyy
@@ -63,7 +65,7 @@ mmm development/tools/idegen/
 sudo development/tools/idegen/idegen.sh
 ```
 
-为提升as第一次构建速度，增加exclude目录:
+### 增加exclude目录
 ```bash
 <excludeFolder url="file://$MODULE_DIR$/bionic" />
 <excludeFolder url="file://$MODULE_DIR$/bootable" />
@@ -88,7 +90,8 @@ sudo development/tools/idegen/idegen.sh
 <excludeFolder url="file://$MODULE_DIR$/tools" />
 <excludeFolder url="file://$MODULE_DIR$/.repo" />
 ```
-as构建完成后，需要配置SDK和JDK，参考下图：
+
+### 配置Android Studio SDK和JDK
 
 ![](./res/as-1.png)
 
@@ -97,12 +100,12 @@ as构建完成后，需要配置SDK和JDK，参考下图：
 ![](./res/as-3.png)
 
 
-Project Struct设置Manifest文件路径：
+### ProjectStruct设置Manifest文件路径
 ```bash
 aosp/frameworks/base/core/res/AndroidManifest.xml
 ```
 
-debug断点调试
+### debug断点调试
 ![](./res/edit_config.png)
 
 # 五、CLion导入多工程
