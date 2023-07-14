@@ -102,6 +102,9 @@ Project Struct设置Manifest文件路径：
 aosp/frameworks/base/core/res/AndroidManifest.xml
 ```
 
+debug断点调试
+![](./res/edit_config.png)
+
 # 五、CLion导入多工程
 
 官方参考：[https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md](https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md)
