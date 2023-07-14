@@ -92,7 +92,7 @@ as构建完成后，需要配置SDK和JDK，参考下图：
 
 ![](./res/as-1.png)
 
-![](./res/as-2.png)
+![](./res/4.png)
 
 ![](./res/as-3.png)
 
