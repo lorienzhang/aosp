@@ -40,7 +40,7 @@ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zl
 
 ```bash
 source build/envsetup.sh 
-lunch aosp_x86-eng
+lunch aosp_xxx-yyy
 export LC_ALL=C
 make -j4
 ```
@@ -57,7 +57,7 @@ export SOONG_GEN_CMAKEFILES_DEBUG=1
 
 ```bash
 source build/envsetup.sh 
-lunch aosp_x86-eng
+lunch aosp_xxx-yyy
 mmm development/tools/idegen/
 
 sudo development/tools/idegen/idegen.sh
