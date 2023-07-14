@@ -96,6 +96,12 @@ as构建完成后，需要配置SDK和JDK，参考下图：
 
 ![](./res/as-3.png)
 
+
+Project Struct设置Manifest文件路径：
+```bash
+aosp/frameworks/base/core/res/AndroidManifest.xml
+```
+
 # 五、CLion导入多工程
 
 官方参考：[https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md](https://android.googlesource.com/platform/build/soong/+/refs/heads/master/docs/clion.md)
