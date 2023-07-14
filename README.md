@@ -1,4 +1,4 @@
-# aosp compile，debug，flash img
+# aosp 编译、调试、刷写真机（nexus 5x）
 
 # 一、安装repo
 ```bash
