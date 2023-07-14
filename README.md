@@ -17,7 +17,7 @@ cd aosp
 
 ### 初始化仓库
 ```bash
-# nexus5x 最后支持的版本
+# nexus5x 支持的最后版本
 repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-8.1.0_r52
 ```
 #### aosp代号、标记、build号
@@ -146,6 +146,53 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize-blacklist=${ANDROID_ROOT}/ext
 这是因为clang编译时默认会进行优化，可以在Android.dp的cppflags中加入-O0禁止优化，然后重新编译m -j8，重启模拟器再次执行调试就可以了。
 
 # 七、刷机（Nexus 5x）
-## 下载硬件驱动
+### 下载硬件驱动
 [https://developers.google.com/android/drivers?hl=en#bullheadopm7.181205.001](https://developers.google.com/android/drivers?hl=en#bullheadopm7.181205.001)
+
+下载后执行shell文件，将生成驱动文件copy到aosp根目录。重新执行编译aosp，注意lunch目标：
+```bash
+lunch aosp_bullhead-userdebug
+```
+
+### 编译结束后，开始烧写img文件
+```bash
+# 产物环境变量
+export ANDROID_PRODUCT_OUT=/home/lorien/work/aosp-27/out/target/product/bullhead
+
+# 解锁oem（15年以前和15年以后的手机有区别）
+fastboot flashing unlock
+
+# 进入bootloader模式
+adb reboot bootloader
+
+# 烧写img映像文件
+fastboot flashall -w
+```
+
+### 常见问题
+1. fastboot devices 提示没权限
+```bash
+which fastboot
+
+sudo chown root:root fastboot
+
+sudo chmode +s fastboot
+```
+
+2. 系统烧写成功后，wifi连接成功但是没有网络
+```bash
+删除变量：（删除以后默认启用）
+adb shell settings delete global captive_portal_mode
+关闭检测：
+adb shell settings put global captive_portal_mode 0
+查看当前状态：
+adb shell settings get global captive_portal_mode
+
+删除（删除默认用HTTPS）
+adb shell settings delete global captive_portal_https_url
+adb shell settings delete global captive_portal_http_url
+分别修改两个地址
+adb shell settings put global captive_portal_http_url http://captive.v2ex.co/generate_204
+adb shell settings put global captive_portal_https_url https://captive.v2ex.co/generate_204
+```
 
