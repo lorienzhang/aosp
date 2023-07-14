@@ -1,5 +1,4 @@
-# aosp
-aosp compile，debug
+# aosp compile，debug，flash img
 
 # 一、安装repo
 ```bash
