@@ -120,19 +120,45 @@ ubuntu安装CLion破解版：[https://www.quanxiaoha.com/idea-pojie/idea-reset-3
 #### out/development/ide/clion目录下创建CMakeLists.txt
 ```bash
 cmake_minimum_required(VERSION 3.6)
-project(native)
+project(aosp-29)
+
+add_subdirectory(frameworks/av/media/libmediaplayerservice/libmediaplayerservice-arm-android)
+add_subdirectory(frameworks/av/media/mediaserver/mediaserver-arm-android)
+add_subdirectory(frameworks/av/media/libmedia/libmedia-arm-android)
+
+add_subdirectory(frameworks/av/media/libaudioclient/libaudiopolicy-arm-android)
+add_subdirectory(frameworks/av/media/libaudioclient/libaudioclient-arm-android)
+
+add_subdirectory(frameworks/av/media/libaaudio/src/libaaudio-arm-android)
+
+add_subdirectory(frameworks/av/media/libaudiohal/impl/libaudiohal@5.0-arm-android)
+add_subdirectory(frameworks/av/media/libaudiohal/libaudiohal-arm-android)
+add_subdirectory(frameworks/av/media/libaudiohal/libaudiohal_deathhandler-arm-android)
+
+add_subdirectory(frameworks/av/media/libaudioprocessing/audio-resampler/libaudio-resampler-arm-android)
+add_subdirectory(frameworks/av/media/libaudioprocessing/libaudioprocessing-arm-android)
+add_subdirectory(frameworks/av/media/libaudioprocessing/libaudioprocessing_arm-arm-android)
+
+add_subdirectory(frameworks/av/services/audioflinger/libaudioflinger-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/common/managerdefinitions/libaudiopolicycomponents-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/engine/common/libaudiopolicyengine_common-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/engine/config/libaudiopolicyengine_config-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/libaudiopolicyengineconfigurable-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/parameter-framework/plugin/libpolicy-subsystem-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/wrapper/libaudiopolicyengineconfigurable_pfwwrapper-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/enginedefault/libaudiopolicyenginedefault-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/managerdefault/libaudiopolicymanagerdefault-arm-android)
+
 add_subdirectory(frameworks/native)
+add_subdirectory(frameworks/native/cmds/servicemanager/servicemanager-arm-android)
+add_subdirectory(frameworks/native/libs/binder/libbinder-arm-android)
 
-add_subdirectory(frameworks/base/core/jni/libandroid_runtime-x86-android)
-add_subdirectory(frameworks/base/libs/hwui/libhwui-x86-android)
-add_subdirectory(frameworks/base/media/jni/libmedia_jni-x86-android)
+add_subdirectory(hardware/libhardware_legacy/audio/libaudiohw_legacy-arm-android)
+add_subdirectory(hardware/libhardware/modules/audio/audio.primary.default-arm-android)
+add_subdirectory(hardware/libhardware/modules/audio/audio.stub.default-arm-android)
+add_subdirectory(hardware/libhardware/modules/audio/audio_policy.stub-arm-android)
+add_subdirectory(hardware/libhardware/modules/audio_remote_submix/audio.r_submix.default-arm-android)
 
-# mediacodec
-add_subdirectory(frameworks/av/media/libstagefright/libstagefright-x86-android)
-add_subdirectory(frameworks/av/media/libstagefright/foundation/libstagefright_foundation-x86-android)
-
-# system
-add_subdirectory(system/core/libutils/libutils-x86-linux)
 ```
 
 使用CLion以project形式打开CMakeLists.txt
