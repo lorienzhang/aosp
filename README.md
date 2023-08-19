@@ -147,18 +147,20 @@ add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/libaudiop
 add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/parameter-framework/plugin/libpolicy-subsystem-arm-android)
 add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/wrapper/libaudiopolicyengineconfigurable_pfwwrapper-arm-android)
 add_subdirectory(frameworks/av/services/audiopolicy/enginedefault/libaudiopolicyenginedefault-arm-android)
+
+# androidmk mk -> bp
+add_subdirectory(frameworks/av/services/audiopolicy/manager/libaudiopolicymanager-arm-android)
 add_subdirectory(frameworks/av/services/audiopolicy/managerdefault/libaudiopolicymanagerdefault-arm-android)
+add_subdirectory(frameworks/av/services/audiopolicy/service/libaudiopolicyservice-arm-android)
+add_subdirectory(frameworks/av/media/audioserver/audioserver-arm-android)
 
 add_subdirectory(frameworks/native)
-add_subdirectory(frameworks/native/cmds/servicemanager/servicemanager-arm-android)
-add_subdirectory(frameworks/native/libs/binder/libbinder-arm-android)
 
 add_subdirectory(hardware/libhardware_legacy/audio/libaudiohw_legacy-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio/audio.primary.default-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio/audio.stub.default-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio/audio_policy.stub-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio_remote_submix/audio.r_submix.default-arm-android)
-
 ```
 
 使用CLion以project形式打开CMakeLists.txt
