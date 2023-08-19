@@ -148,6 +148,9 @@ add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/parameter
 add_subdirectory(frameworks/av/services/audiopolicy/engineconfigurable/wrapper/libaudiopolicyengineconfigurable_pfwwrapper-arm-android)
 add_subdirectory(frameworks/av/services/audiopolicy/enginedefault/libaudiopolicyenginedefault-arm-android)
 
+# audio tests
+add_subdirectory(frameworks/base/media/tests/audiotests/shared_mem_test-arm-android)
+
 # androidmk mk -> bp
 add_subdirectory(frameworks/av/services/audiopolicy/manager/libaudiopolicymanager-arm-android)
 add_subdirectory(frameworks/av/services/audiopolicy/managerdefault/libaudiopolicymanagerdefault-arm-android)
