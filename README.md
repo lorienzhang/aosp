@@ -150,6 +150,7 @@ add_subdirectory(frameworks/av/services/audiopolicy/enginedefault/libaudiopolicy
 
 # audio tests
 add_subdirectory(frameworks/base/media/tests/audiotests/shared_mem_test-arm-android)
+add_subdirectory(frameworks/base/core/jni/libandroid_runtime-arm-android)
 
 # androidmk mk -> bp
 add_subdirectory(frameworks/av/services/audiopolicy/manager/libaudiopolicymanager-arm-android)
