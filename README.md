@@ -158,13 +158,33 @@ add_subdirectory(frameworks/av/services/audiopolicy/managerdefault/libaudiopolic
 add_subdirectory(frameworks/av/services/audiopolicy/service/libaudiopolicyservice-arm-android)
 add_subdirectory(frameworks/av/media/audioserver/audioserver-arm-android)
 
+# binder
+add_subdirectory(frameworks/native/libs/binder/libbinder-arm-android)
+add_subdirectory(frameworks/native/cmds/servicemanager/bctest-arm-android)
+add_subdirectory(frameworks/native/cmds/servicemanager/servicemanager-arm-android)
+
 add_subdirectory(frameworks/native)
+
+add_subdirectory(hardware/libhardware/libhardware-arm-android)
+add_subdirectory(hardware/libhardware/modules/vibrator/vibrator.default-arm-android)
+#add_subdirectory(hardware/interfaces/light/2.0/android.hardware.light@2.0-adapter-arm-android)
+#add_subdirectory(hardware/interfaces/light/2.0/android.hardware.light@2.0-adapter-helper-arm-android)
+add_subdirectory(hardware/interfaces/light/2.0/android.hardware.light@2.0-arm-android)
+#add_subdirectory(hardware/interfaces/light/2.0/android.hardware.light@2.0-vts.driver-arm-android)
+#add_subdirectory(hardware/interfaces/light/2.0/android.hardware.light@2.0-vts.profiler-arm-android)
+add_subdirectory(hardware/interfaces/light/2.0/default/android.hardware.light@2.0-impl-arm-android)
+add_subdirectory(hardware/interfaces/light/2.0/default/android.hardware.light@2.0-service-arm-android)
+add_subdirectory(hardware/interfaces/light/2.0/default/android.hardware.light@2.0-service-lazy-arm-android)
 
 add_subdirectory(hardware/libhardware_legacy/audio/libaudiohw_legacy-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio/audio.primary.default-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio/audio.stub.default-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio/audio_policy.stub-arm-android)
 add_subdirectory(hardware/libhardware/modules/audio_remote_submix/audio.r_submix.default-arm-android)
+
+# system_server
+add_subdirectory(frameworks/base/services/core/jni/libservices.core-arm-android)
+
 ```
 
 使用CLion以project形式打开CMakeLists.txt
