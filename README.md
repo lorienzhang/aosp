@@ -16,8 +16,7 @@ cd aosp
 
 ### 初始化仓库
 ```bash
-# nexus5x 支持的最后版本
-repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-8.1.0_r52
+repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-10.0.0_r33
 ```
 #### aosp代号、标记、build号
 [https://source.android.com/docs/setup/about/build-numbers](https://source.android.com/docs/setup/about/build-numbers)
