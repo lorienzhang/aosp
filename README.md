@@ -162,7 +162,7 @@ add_subdirectory(frameworks/av/media/audioserver/audioserver-arm-android)
 add_subdirectory(frameworks/native/libs/binder/libbinder-arm-android)
 add_subdirectory(frameworks/native/cmds/servicemanager/bctest-arm-android)
 add_subdirectory(frameworks/native/cmds/servicemanager/servicemanager-arm-android)
-add_subdirectory(system/core/libutils/libutils-x86-linux_glibc)
+add_subdirectory(system/core/libutils/libutils-arm-android)
 
 add_subdirectory(frameworks/native)
 
