@@ -151,6 +151,9 @@ add_subdirectory(frameworks/av/services/audiopolicy/enginedefault/libaudiopolicy
 add_subdirectory(frameworks/base/media/tests/audiotests/shared_mem_test-arm-android)
 add_subdirectory(frameworks/base/core/jni/libandroid_runtime-arm-android)
 
+#SurfaceTexture
+add_subdirectory(frameworks/base/libs/hwui/libhwui-arm-android)
+
 # androidmk mk -> bp
 add_subdirectory(frameworks/av/services/audiopolicy/manager/libaudiopolicymanager-arm-android)
 add_subdirectory(frameworks/av/services/audiopolicy/managerdefault/libaudiopolicymanagerdefault-arm-android)
@@ -161,7 +164,12 @@ add_subdirectory(frameworks/av/media/audioserver/audioserver-arm-android)
 add_subdirectory(frameworks/native/libs/binder/libbinder-arm-android)
 add_subdirectory(frameworks/native/cmds/servicemanager/bctest-arm-android)
 add_subdirectory(frameworks/native/cmds/servicemanager/servicemanager-arm-android)
+add_subdirectory(frameworks/native/opengl/libs/libEGL-arm-android)
+add_subdirectory(frameworks/native/opengl/libs/libGLESv2-arm-android)
 add_subdirectory(system/core/libutils/libutils-arm-android)
+
+# nativewindow
+add_subdirectory(frameworks/native/libs/nativewindow/libnativewindow-arm-android)
 
 add_subdirectory(frameworks/native)
 
@@ -184,6 +192,11 @@ add_subdirectory(hardware/libhardware/modules/audio_remote_submix/audio.r_submix
 
 # system_server
 add_subdirectory(frameworks/base/services/core/jni/libservices.core-arm-android)
+
+add_subdirectory(external/skia/libskia-arm-android)
+
+add_subdirectory(frameworks/native/services/surfaceflinger/CompositionEngine/libcompositionengine-arm-android)
+add_subdirectory(frameworks/native/libs/renderengine/librenderengine-arm-android)
 
 ```
 
